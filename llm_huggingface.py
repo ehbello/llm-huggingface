@@ -102,8 +102,7 @@ class HuggingFace(llm.Model):
             if DEBUG:
                 print(f"Response: {resp}")
             return resp[0]['generated_text']
-        else:
-            return None
+        response.raise_for_status()
 
 if __name__ == '__main__':
     model = HuggingFace('bigscience/bloom')
