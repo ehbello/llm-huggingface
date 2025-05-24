@@ -105,6 +105,6 @@ class HuggingFace(llm.Model):
         response.raise_for_status()
 
 if __name__ == '__main__':
-    model = HuggingFace('bigscience/bloom')
+    model = HuggingFace('deepseek-ai/DeepSeek-R1-Distill-Qwen-32B')
     resp = model.query({ "inputs": "The meaning of life is" })
     print(resp)
