@@ -68,7 +68,7 @@ class HuggingFace(llm.Model):
 
     def __init__(self, model_id):
         self.model_id = 'huggingface/' + model_id
-        self.url = "https://api-inference.huggingface.co/models/" + model_id
+        self.url = "https://router.huggingface.co/hf-inference/models/" + model_id
 
         key = llm.get_key("", "huggingface", "LLM_HUGGINGFACE_KEY")
         if key is None:
