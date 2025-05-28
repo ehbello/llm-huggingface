@@ -1,6 +1,6 @@
 [project]
 name = "llm-huggingface"
-version = "0.0.1"
+version = "0.0.2"
 description = "LLM plugin providing access to the huggingface inference API"
 readme = "README.md"
 authors = [{ name = "Andres EM" }]
